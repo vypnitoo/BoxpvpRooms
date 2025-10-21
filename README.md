@@ -191,8 +191,8 @@ Use placeholders in custom messages:
 ### Building from Source
 
 ```bash
-git clone https://github.com/YourUsername/SmartArenas.git
-cd SmartArenas
+git clone https://github.com/vypnitoo/BoxpvpRooms.git
+cd BoxpvpRooms
 ./gradlew build
 ```
 
