@@ -1,0 +1,61 @@
+plugins {
+    id 'java'
+    id("com.github.johnrengelman.shadow") version "7.1.2"
+}
+
+group = 'com.vypnito'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/' }
+    maven { url = 'https://repo.codemc.org/repository/maven-public/' }
+    maven { url = 'https://jitpack.io' }
+}
+
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT'
+    compileOnly 'me.clip:placeholderapi:2.11.5'
+    compileOnly 'com.github.MilkBowl:VaultAPI:1.7'
+    implementation 'org.xerial:sqlite-jdbc:3.42.0.0'
+}
+
+sourceSets {
+    main {
+        java {
+            exclude 'com/vypnito/arena/gui/**'
+            exclude 'com/vypnito/arena/player/PlayerChatListener.java'
+            exclude 'com/vypnito/arena/Arena.java'
+            exclude 'com/vypnito/arena/ArenaCommand.java'
+            exclude 'com/vypnito/arena/ArenaTabCompleter.java'
+            exclude 'com/vypnito/arena/message/**'
+            exclude 'com/vypnito/arena/game/GameManager.java'
+            exclude 'com/vypnito/arena/game/GameListener.java'
+            exclude 'com/vypnito/arena/arenas/ArenaManager.java'
+            exclude 'com/vypnito/arena/player/SelectionManager.java'
+            exclude 'com/vypnito/arena/player/WandListener.java'
+        }
+    }
+}
+
+shadowJar {
+    archiveFileName.set('BoxpvpRooms.jar')
+    relocate 'org.sqlite', 'com.vypnito.boxpvprooms.libs.sqlite'
+}
+
+processResources {
+    def props = [
+            'version': project.version,
+            'name': 'BoxpvpRooms',
+            'main': 'com.vypnito.boxpvprooms.BoxpvpRooms'
+    ]
+    inputs.properties props
+    filesMatching('plugin.yml') {
+        expand props
+    }
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+}

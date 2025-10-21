@@ -1,0 +1,238 @@
+# 🏟️ **BoxpvpRooms** - Advanced PvP Arena System 🏟️
+*Transform your server into the ultimate PvP experience!*
+
+[CENTER][SIZE=7][COLOR=#FFD700]🏆 BoxpvpRooms v1.0 🏆[/COLOR][/SIZE]
+[SIZE=4][COLOR=#FFA500]The Most Complete PvP Room System for Minecraft[/COLOR][/SIZE][/CENTER]
+
+[IMG]https://i.imgur.com/placeholder1.png[/IMG]
+
+---
+
+## 🌟 **OVERVIEW**
+
+BoxpvpRooms is the most advanced and feature-rich PvP arena plugin available for Spigot/Paper servers. Designed for servers seeking excellence in organized combat, it provides everything you need to create professional PvP experiences with 1v1, 2v2, 4v4 battles, team management, comprehensive statistics, and much more!
+
+[CENTER][SIZE=5][COLOR=#FF6B6B]⚔️ COMPLETELY FREE & OPEN SOURCE ⚔️[/COLOR][/SIZE][/CENTER]
+
+---
+
+## ✨ **KEY FEATURES**
+
+[SPOILER="🏟️ Complete Room System"][LIST]
+[*] [COLOR=#00FF00]**Multiple Room Types**[/COLOR]: Normal (1v1), Team (2v2, 4v4), Clan battles
+[*] [COLOR=#00FF00]**Smart Barriers**[/COLOR]: Automatic activation when room is full
+[*] [COLOR=#00FF00]**Anti-Exploit System**[/COLOR]: Protection against common bugs and exploits
+[*] [COLOR=#00FF00]**Post-Combat Cooldown**[/COLOR]: Prevents immediate reactivation after combat
+[*] [COLOR=#00FF00]**Safe Teleport**[/COLOR]: Intelligent system that finds free locations
+[*] [COLOR=#00FF00]**Creative Mode Protection**[/COLOR]: Prevents breaking barriers in creative mode
+[*] [COLOR=#00FF00]**Configurable Countdown**[/COLOR]: Customizable time to break barriers
+[*] [COLOR=#00FF00]**Team Balance**[/COLOR]: Intelligent auto-assignment for fair matches
+[/LIST][/SPOILER]
+
+[SPOILER="🎨 Advanced Visual Editor"][LIST]
+[*] [COLOR=#FFD700]**Visual Selection Tool**[/COLOR]: Wand with clear coordinate feedback
+[*] [COLOR=#FFD700]**Three Selection Modes**[/COLOR]: Zone, Barrier, and Teleport point selection
+[*] [COLOR=#FFD700]**Live Editing**[/COLOR]: Modify existing rooms without server restart
+[*] [COLOR=#FFD700]**Room Type Support**[/COLOR]: Separate tools for Normal/Team/Clan creation
+[*] [COLOR=#FFD700]**Intuitive Commands**[/COLOR]: Easy-to-use command system
+[/LIST][/SPOILER]
+
+[SPOILER="🏆 Professional Statistics System"][LIST]
+[*] [COLOR=#FF69B4]**SQLite Database**[/COLOR]: Persistent and efficient storage
+[*] [COLOR=#FF69B4]**Complete Tracking**[/COLOR]: Kills, deaths, wins, losses by room type
+[*] [COLOR=#FF69B4]**Global Rankings**[/COLOR]: Top players in multiple categories
+[*] [COLOR=#FF69B4]**Separate Statistics**[/COLOR]: Normal vs Team vs Clan tracking
+[*] [COLOR=#FF69B4]**Match History**[/COLOR]: Detailed combat records with duration
+[*] [COLOR=#FF69B4]**Player Ranks**[/COLOR]: Individual ranking system
+[/LIST][/SPOILER]
+
+[SPOILER="🔧 Room Properties & Customization"][LIST]
+[*] [COLOR=#87CEEB]**Potion Effects**[/COLOR]: Add custom effects with configurable levels
+[*] [COLOR=#87CEEB]**Keep Inventory**[/COLOR]: Keep inventory on death (per room configurable)
+[*] [COLOR=#87CEEB]**Combat Log Protection**[/COLOR]: Anti-logout system during combat
+[*] [COLOR=#87CEEB]**Block Protection**[/COLOR]: Prevents block placement/breaking
+[*] [COLOR=#87CEEB]**Custom Barrier Materials**[/COLOR]: Choose any material for barriers
+[*] [COLOR=#87CEEB]**Sound Effects**[/COLOR]: Audio feedback for important events
+[/LIST][/SPOILER]
+
+[SPOILER="🔗 Plugin Integrations"][LIST]
+[*] [COLOR=#90EE90]**PlaceholderAPI**[/COLOR]: 25+ placeholders for statistics display
+[*] [COLOR=#90EE90]**Vault**[/COLOR]: Economy integration ready
+[*] [COLOR=#90EE90]**UltimateClans**[/COLOR]: Complete support for clan duels
+[*] [COLOR=#90EE90]**DeluxeCombat**[/COLOR]: Advanced PvP system integration
+[*] [COLOR=#90EE90]**PvPManager**[/COLOR]: Enhanced PvP controls
+[/LIST][/SPOILER]
+
+---
+
+## 📋 **COMMANDS**
+
+[CODE]
+Main Commands:
+/rooms wand [clan/team]        - Get creation tool
+/1v1rooms create <name>        - Create new arena
+/bpr edit <name>               - Edit existing arena
+/rooms delete <name>           - Delete arena
+/rooms mode <zone/barrier/teleport> - Change selection mode
+/rooms save                    - Save current arena
+/rooms cancel                  - Cancel current edit
+/rooms reload                  - Reload configuration
+
+Property Management:
+/rooms prop <room> keepinventory <true/false>  - Keep inventory setting
+/rooms prop <room> combatlog <true/false>      - Combat log protection
+/rooms prop <room> preventblocks <true/false>  - Block protection
+/rooms prop <room> barrier <material>          - Barrier material
+/rooms prop <room> effect add <effect> <level> - Add potion effect
+/rooms prop <room> effect remove <effect>      - Remove effect
+/rooms prop <room> effect clear                - Clear all effects
+
+Statistics:
+/rooms stats [player]          - View player statistics
+/rooms leaderboard [category]  - View leaderboards
+
+Aliases: /1v1rooms, /bpr work for all commands!
+[/CODE]
+
+---
+
+## 🔑 **PERMISSIONS**
+
+[CODE]
+zoneplugin.admin     - Full plugin access
+zoneplugin.staff     - Room limits bypass
+zoneplugin.create    - Create and edit zones
+zoneplugin.use       - Use basic commands
+zoneplugin.bet       - Participate in betting (future feature)
+zoneplugin.stats     - View statistics
+[/CODE]
+
+---
+
+## 🏷️ **PLACEHOLDERAPI SUPPORT**
+
+Over 25 placeholders available for displaying statistics:
+
+[CODE]
+%zoneplugin_kills%           - Player's total kills
+%zoneplugin_deaths%          - Total deaths
+%zoneplugin_wins%            - Total wins
+%zoneplugin_losses%          - Total losses
+%zoneplugin_kdr%             - Kill/Death ratio
+%zoneplugin_winrate%         - Win percentage
+%zoneplugin_normal_kills%    - Kills in normal rooms
+%zoneplugin_team_kills%      - Kills in team rooms
+%zoneplugin_clan_kills%      - Kills in clan rooms
+%zoneplugin_maxkills_1%      - Top killer name
+%zoneplugin_top_kills_1%     - Top killer value
+%zoneplugin_rank_kills%      - Player's kill rank
+
+And many more for comprehensive stat displays!
+[/CODE]
+
+---
+
+## 🖼️ **SCREENSHOTS**
+
+[SPOILER="📸 Plugin Screenshots"][CENTER]
+[IMG]https://i.imgur.com/placeholder2.png[/IMG]
+[SIZE=2]Arena creation with visual selection tool[/SIZE]
+
+[IMG]https://i.imgur.com/placeholder3.png[/IMG]
+[SIZE=2]Professional statistics GUI[/SIZE]
+
+[IMG]https://i.imgur.com/placeholder4.png[/IMG]
+[SIZE=2]Team battle in action[/SIZE]
+
+[IMG]https://i.imgur.com/placeholder5.png[/IMG]
+[SIZE=2]Leaderboard system[/SIZE][/CENTER][/SPOILER]
+
+---
+
+## ⚙️ **INSTALLATION & SETUP**
+
+[SPOILER="📦 Installation Guide"][LIST=1]
+[*] Download the BoxpvpRooms.jar file
+[*] Install [URL='https://www.spigotmc.org/resources/placeholderapi.6245/']PlaceholderAPI[/URL] (required)
+[*] Install [URL='https://www.spigotmc.org/resources/vault.34315/']Vault[/URL] (optional, for economy features)
+[*] Place BoxpvpRooms.jar in your plugins folder
+[*] Restart your server
+[*] Configure settings in config.yml
+[*] Use /rooms wand to start creating arenas!
+[/LIST][/SPOILER]
+
+---
+
+## 🔧 **CONFIGURATION**
+
+The plugin features extensive configuration options:
+
+[SPOILER="⚙️ Configuration Options"][LIST]
+[*] [COLOR=#FFA500]**Default Arena Settings**[/COLOR]: Wall materials, effects, player requirements
+[*] [COLOR=#FFA500]**Room Type Settings**[/COLOR]: Separate configs for Normal/Team/Clan modes
+[*] [COLOR=#FFA500]**Statistics Control**[/COLOR]: Database settings, cleanup options
+[*] [COLOR=#FFA500]**Performance Tuning**[/COLOR]: Async operations, caching, memory optimization
+[*] [COLOR=#FFA500]**Message Customization**[/COLOR]: 25+ customizable messages with color codes
+[*] [COLOR=#FFA500]**Plugin Integrations**[/COLOR]: Enable/disable external plugin support
+[*] [COLOR=#FFA500]**Anti-Grief Protection**[/COLOR]: Extensive block replacement safety lists
+[/LIST][/SPOILER]
+
+---
+
+## 🚀 **REQUIREMENTS & COMPATIBILITY**
+
+[LIST]
+[*] [COLOR=#00FF00]**Minecraft Version**[/COLOR]: 1.17+ (tested up to 1.21)
+[*] [COLOR=#00FF00]**Server Software**[/COLOR]: Spigot, Paper, Purpur
+[*] [COLOR=#00FF00]**Java Version**[/COLOR]: Java 17+
+[*] [COLOR=#00FF00]**Required Dependencies**[/COLOR]: PlaceholderAPI
+[*] [COLOR=#00FF00]**Optional Dependencies**[/COLOR]: Vault, UltimateClans
+[/LIST]
+
+---
+
+## 🌟 **WHY CHOOSE BoxpvpRooms?**
+
+[CENTER][SIZE=4][COLOR=#FF1493]✨ COMPLETELY FREE & OPEN SOURCE ✨[/COLOR][/SIZE][/CENTER]
+
+[LIST]
+[*] [COLOR=#32CD32]**Professional Quality**[/COLOR]: Enterprise-level code and features
+[*] [COLOR=#32CD32]**Performance Optimized**[/COLOR]: Async operations, memory efficient
+[*] [COLOR=#32CD32]**Highly Configurable**[/COLOR]: Customize every aspect to your needs
+[*] [COLOR=#32CD32]**Active Development**[/COLOR]: Regular updates and improvements
+[*] [COLOR=#32CD32]**Community Driven**[/COLOR]: Built by the community, for the community
+[*] [COLOR=#32CD32]**No Hidden Costs**[/COLOR]: Everything included, no premium versions
+[*] [COLOR=#32CD32]**Full Source Access**[/COLOR]: Modify and customize as needed
+[/LIST]
+
+---
+
+## 📞 **SUPPORT & UPDATES**
+
+[LIST]
+[*] [COLOR=#1E90FF]**GitHub Repository**[/COLOR]: [Full source code and documentation]
+[*] [COLOR=#1E90FF]**Issue Tracker**[/COLOR]: Report bugs and request features
+[*] [COLOR=#1E90FF]**Community Support**[/COLOR]: Active community assistance
+[*] [COLOR=#1E90FF]**Regular Updates**[/COLOR]: Continuous improvements and new features
+[*] [COLOR=#1E90FF]**Comprehensive Wiki**[/COLOR]: Detailed setup and usage guides
+[/LIST]
+
+---
+
+[CENTER][SIZE=6][COLOR=#FF4500]🎯 Transform Your Server Today! 🎯[/COLOR][/SIZE]
+
+[SIZE=4][COLOR=#FFD700]Download BoxpvpRooms and give your players the ultimate PvP experience![/COLOR][/SIZE]
+
+[URL='https://github.com/your-repo/boxpvprooms'][IMG]https://i.imgur.com/download-button.png[/IMG][/URL]
+
+[SIZE=2]⭐ If you love this plugin, please leave a review and rating! ⭐[/SIZE][/CENTER]
+
+---
+
+## 📊 **VERSION HISTORY**
+
+[SPOILER="📋 Changelog"][LIST]
+[*] [COLOR=#FF6347]**v1.0.0**[/COLOR] - Initial release with complete PvP arena system including room types, statistics, PlaceholderAPI integration, and advanced features
+[/LIST][/SPOILER]
+
+[CENTER][SIZE=3][COLOR=#808080]Made with ❤️ by the Minecraft community[/COLOR][/SIZE][/CENTER]
