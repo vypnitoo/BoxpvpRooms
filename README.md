@@ -252,10 +252,9 @@ We welcome contributions! Please feel free to:
 
 Need help? Here are your options:
 
-- 📖 **Documentation:** Check this README and the [Wiki](https://github.com/YourUsername/SmartArenas/wiki)
-- 🐛 **Bug Reports:** Open an [Issue](https://github.com/YourUsername/SmartArenas/issues)
-- 💬 **Discord:** Join our [Discord Server](https://discord.gg/YourServer)
-- 📧 **Email:** Contact us at support@yourproject.com
+- 📖 **Documentation:** Check this README and the [Wiki]([https://github.com/YourUsername/SmartArenas/wiki](https://discord.gg/cX2Vc7cbJr))
+- 🐛 **Bug Reports:** Open an [Issue]([https://github.com/YourUsername/SmartArenas/issues](https://discord.gg/cX2Vc7cbJr))
+- 💬 **Discord:** Join our [Discord Server]([https://discord.gg/YourServer](https://discord.gg/cX2Vc7cbJr))
 
 ## 📄 License
 
