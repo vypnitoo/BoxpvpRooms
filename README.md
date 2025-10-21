@@ -3,8 +3,7 @@
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.17+-brightgreen.svg)](https://minecraft.net)
 [![Java](https://img.shields.io/badge/Java-21+-orange.svg)](https://openjdk.java.net/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.0-purple.svg)](https://github.com/YourUsername/SmartArenas/releases)
-
+[![Version](https://img.shields.io/badge/Version-1.0-purple.svg)](https://github.com/vypnitoo/BoxpvpRooms/releases)
 A dynamic arena management system for Minecraft servers that creates configurable PvP arenas with automatic wall generation, player management, and advanced effect systems.
 
 ## ✨ Features
@@ -26,7 +25,7 @@ A dynamic arena management system for Minecraft servers that creates configurabl
 
 ## 🚀 Installation
 
-1. **Download** the latest release from the [Releases](https://github.com/YourUsername/SmartArenas/releases) page
+1. **Download** the latest release from the [Releases](https://github.com/vypnitoo/BoxpvpRooms/releases) page
 2. **Place** the `SmartArenas.jar` file in your server's `plugins` folder
 3. **Start/Restart** your server to generate the configuration files
 4. **Configure** the plugin in `plugins/SmartArenas/config.yml` as needed
