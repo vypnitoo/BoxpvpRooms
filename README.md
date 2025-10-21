@@ -1,6 +1,6 @@
 # SmartArenas
 
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.17+-brightgreen.svg)](https://minecraft.net)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.20+-brightgreen.svg)](https://minecraft.net)
 [![Java](https://img.shields.io/badge/Java-21+-orange.svg)](https://openjdk.java.net/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-1.0-purple.svg)](https://github.com/vypnitoo/BoxpvpRooms/releases)
@@ -19,7 +19,7 @@ A dynamic arena management system for Minecraft servers that creates configurabl
 
 ## 📋 Requirements
 
-- **Minecraft Server:** 1.17 or higher
+- **Minecraft Server:** 1.20 or higher
 - **Java:** 21 or higher
 - **Server Software:** Spigot, Paper, or compatible forks
 
