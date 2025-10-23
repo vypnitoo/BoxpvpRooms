@@ -1,4 +1,4 @@
-# SmartArenas
+# BoxPvPRoomsArenas
 
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.20+-brightgreen.svg)](https://minecraft.net)
 [![Java](https://img.shields.io/badge/Java-21+-orange.svg)](https://openjdk.java.net/)
@@ -236,16 +236,6 @@ We welcome contributions! Please feel free to:
 - Include comprehensive JavaDoc comments
 - Write unit tests for new features
 - Ensure thread safety for all operations
-
-## 📝 Changelog
-
-### Version 1.3 (Latest)
-- ✅ **Modernized for 1.17+** - Updated all APIs for latest Minecraft versions
-- 🧹 **Code Cleanup** - Removed 367 lines of unused code
-- ✨ **Fancy Unicode System** - Configurable fancy text styling
-- 🔧 **Enhanced Configuration** - Comprehensive message customization
-- 🐛 **Bug Fixes** - Resolved thread safety and resource leak issues
-- 🎨 **Professional GUI** - Improved user interface design
 
 ## 🆘 Support
 
