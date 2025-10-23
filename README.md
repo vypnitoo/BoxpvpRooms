@@ -1,4 +1,4 @@
-# BoxPvPRoomsArenas
+# BoxPvPRooms
 
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.20+-brightgreen.svg)](https://minecraft.net)
 [![Java](https://img.shields.io/badge/Java-21+-orange.svg)](https://openjdk.java.net/)
